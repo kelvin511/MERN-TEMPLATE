@@ -5,7 +5,7 @@ export interface CustomParamsDictionary {
   [key: string]: any;
 }
 
-const catchAsync =
+export const catchAsync =
   (fn: RequestHandler<CustomParamsDictionary, any, any, qs.ParsedQs, Record<string, any>>) =>
   (
     req: Request<CustomParamsDictionary, any, any, any, Record<string, any>>,
